@@ -20,6 +20,8 @@ public class App {
 		try {
 			server.start();
 			server.join();
+		} catch (Exception e) {
+			e.printStackTrace();
 		} finally {
 			server.destroy();
 		}
