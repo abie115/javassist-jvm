@@ -6,13 +6,13 @@ import javax.ws.rs.PathParam;
 
 @Path("rest")
 public class Rest {
-	
+
 	@GET
 	@Path("/sleep/{time}")
-	public String getTime(@PathParam("time") Integer time){
+	public String getTime(@PathParam("time") Integer time) {
 		Integer t = MyClass.sleep(time);
-		return "Uspiony na: "+t;
-		
+		return "Uspiony na: " + t;
+
 	}
 
 }
